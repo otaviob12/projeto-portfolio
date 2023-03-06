@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    max-height: 100vh;
+}
+html, body{
+    min-height: 100vh;
+    background-color: rgb(24, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+.wd{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+ .navigation{
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 23px;
+}
+.navigation ul{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.navigation li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+    letter-spacing: 1px;
+}
+.navigation li:hover a{
+    background-color: rgba(255, 0, 0, 0.521);
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 4px 4px 8px black ;
+} 
+
+section{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    
+}
+section > h1{
+    text-align: center;
+}
+.text > p{
+    width: 70%;
+}
+
+section.sobre{
+    margin: auto;
+    display: flex;
+    padding-top: 200px;
+}
+.foto{
+    width: 20%;
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 40px;
+} 
+.projeto{
+    width: 100%; 
+    font-variant: small-caps;
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container h1{
+    text-align: center;
+}
+.add{
+    background-color: rgba(211, 211, 211, 0.301);
+    border: 1px solid rgba(211, 211, 211, 0.301);
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+
+}
+.add:hover{
+    box-shadow: 0px 0px 40px white;
+}
+.add h1{
+    padding-bottom: 15px;
+}
+.android{
+    width: 70%;
+}
+.habitos{
+    width: 70%;
+}
+.login{
+    width: 70%;
+}
+footer.rodape{
+    text-align: center;
+}
+
+@media screen  and (max-width:800px) {
+    
+    .wd{
+        display: none;
+    }
+    .navigation{
+        display: block;
+        font-size: 23px;
+    }
+    .navigation ul{
+        display: flex;
+        margin-left: -90px;
+        padding: 5px;
+    }
+    .navigation li{
+        list-style: none;
+        margin: auto;
+        margin-left: 8px;
+    }
+    .navigation li a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500px;
+        letter-spacing: 1px;
+    }
+    section.sobre{
+        margin: auto;
+        display: flex;
+        padding-top: 150px;
+    }
+    .foto{
+        display: none;
+    }
+    section.projeto{
+        padding-top: 0px;
+        width: 95vw;
+        margin: auto;
+    }
+    .container{
+        display: block;
+        margin: auto;
+    }
+    .add{
+        width: 300px;
+        height: 250px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .android{
+        width: 90%;
+    }
+    .habitos{
+        width: 90%;
+    }
+    .login{
+        width: 90%;
+    }
+    .rodape{
+        width: 100vw;
+        margin-top: 100px;
+        padding: 20px;
+    }
+}
+
